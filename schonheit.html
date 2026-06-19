@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doppelherz Haut Haare Nägel – Страница товара</title>
+
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --primary: #3b82f6;
+      --radius: 18px;
+      --shadow: 0 8px 24px rgba(0,0,0,0.06);
+      --font: system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .header {
+      background: #fff;
+      padding: 14px 18px;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .product-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 18px 40px;
+      display: grid;
+      gap: 30px;
+    }
+
+    @media (min-width: 900px) {
+      .product-page {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .main-image {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .thumb-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .thumb-row img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 12px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .thumb-row img:hover {
+      border-color: var(--primary);
+    }
+
+    .product-title {
+      font-size: 1.8rem;
+      margin: 0 0 10px;
+    }
+
+    .product-desc {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 18px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .info-box {
+      background: var(--card);
+      padding: 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">PureLife</div>
+  </div>
+</header>
+
+<section class="product-page">
+
+  <!-- LEFT SIDE -->
+  <div>
+    <img id="mainImg" class="main-image"
+         src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1747436429/assets/pas/images/66b1142d-8698-4ae7-9b35-19a1b89f2294/doppelherz-haut-haare-naegel-tabletten-30-stueck"
+         alt="Doppelherz Haut Haare Nägel">
+
+    <div class="thumb-row">
+      <img onclick="swapImage(this.src)"
+           src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1747436429/assets/pas/images/66b1142d-8698-4ae7-9b35-19a1b89f2294/doppelherz-haut-haare-naegel-tabletten-30-stueck">
+
+      <img onclick="swapImage(this.src)"
+           src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1747436627/assets/pas/images/ac8a1054-35fb-4733-a76f-bf117a47af9f/doppelherz-haut-haare-naegel-tabletten-30-stueck">
+
+      
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div>
+    <h1 class="product-title">Doppelherz Haut • Haare • Nägel</h1>
+
+    <p class="product-desc">
+      Doppelherz Haut • Haare • Nägel — это комплекс, разработанный специально для поддержки красоты 
+      и здоровья кожи, волос и ногтей изнутри. Формула сочетает биотин, цинк, медь, фолиевую кислоту, 
+      витамины группы B и экстракты, которые помогают укреплять структуру волос, улучшать состояние кожи 
+      и способствовать росту крепких ногтей.  
+      <br><br>
+      Продукт идеально подходит людям, которые сталкиваются с ломкостью ногтей, выпадением волос, 
+      сухостью кожи, стрессом, несбалансированным питанием или сезонными изменениями. Немецкое качество 
+      Doppelherz гарантирует высокую эффективность и безопасность.
+    </p>
+
+    <div class="price">1500 RUB</div>
+
+    <button class="btn">Добавить в корзину</button>
+
+    <h3 class="section-title">Преимущества</h3>
+    <ul>
+      <li>Биотин укрепляет волосы и улучшает их структуру.</li>
+      <li>Цинк поддерживает здоровье кожи и ногтей.</li>
+      <li>Медь способствует нормальной пигментации волос.</li>
+      <li>Фолиевая кислота и витамины B поддерживают клеточное обновление.</li>
+      <li>Комплекс помогает уменьшить ломкость ногтей и выпадение волос.</li>
+      <li>Подходит при стрессах, диетах и сезонных изменениях.</li>
+      <li>Немецкое качество Doppelherz.</li>
+    </ul>
+
+    <h3 class="section-title">Почему важно</h3>
+    <div class="info-box">
+      Кожа, волосы и ногти ежедневно подвергаются воздействию стресса, экологии, питания и гормональных 
+      изменений. Недостаток витаминов и минералов может приводить к сухости кожи, ломкости ногтей, 
+      выпадению волос и тусклому внешнему виду.  
+      <br><br>
+      Комплекс Doppelherz восполняет дефицит ключевых микроэлементов, поддерживает синтез коллагена, 
+      улучшает структуру волос и способствует здоровому обновлению клеток кожи.
+    </div>
+
+    <h3 class="section-title">Состав</h3>
+    <div class="info-box">
+      Биотин — для крепких волос и ногтей.  
+      Цинк — поддержка кожи и иммунитета.  
+      Медь — нормальная пигментация волос.  
+      Фолиевая кислота — обновление клеток.  
+      Витамины B2, B6, B12 — энергия, обмен веществ, здоровье кожи.  
+      Экстракты и вспомогательные вещества.  
+      <br><br>
+      Полный состав указан на упаковке.
+    </div>
+
+    <h3 class="section-title">Способ применения</h3>
+    <div class="info-box">
+      Взрослым: 1 таблетка в день, запивая водой.  
+      Принимать во время еды.  
+      <br><br>
+      Рекомендуемый курс: 1–3 месяца.
+    </div>
+
+    <h3 class="section-title">Кому подходит</h3>
+    <div class="info-box">
+      ✔ людям с ломкими ногтями  
+      ✔ при выпадении или ослаблении волос  
+      ✔ при сухости и тусклости кожи  
+      ✔ женщинам в период стресса или диет  
+      ✔ людям с дефицитом витаминов группы B  
+      ✔ тем, кто хочет улучшить внешний вид и здоровье кожи, волос и ногтей  
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  function swapImage(src) {
+    document.getElementById("mainImg").src = src;
+  }
+</script>
+
+</body>
+</html>

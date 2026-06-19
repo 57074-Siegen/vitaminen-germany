@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mivolis Vitamin B‑Komplex – Страница товара</title>
+
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --primary: #3b82f6;
+      --radius: 18px;
+      --shadow: 0 8px 24px rgba(0,0,0,0.06);
+      --font: system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .header {
+      background: #fff;
+      padding: 14px 18px;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .product-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 18px 40px;
+      display: grid;
+      gap: 30px;
+    }
+
+    @media (min-width: 900px) {
+      .product-page {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .main-image {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .thumb-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .thumb-row img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 12px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .thumb-row img:hover {
+      border-color: var(--primary);
+    }
+
+    .product-title {
+      font-size: 1.8rem;
+      margin: 0 0 10px;
+    }
+
+    .product-desc {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 18px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .info-box {
+      background: var(--card);
+      padding: 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">PureLife</div>
+  </div>
+</header>
+
+<section class="product-page">
+
+  <!-- LEFT SIDE: IMAGES -->
+  <div>
+    <img id="mainImg" class="main-image"
+         src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1769558141/assets/pas/images/f1226dce-90df-4760-a2c5-8971dd24cd06/mivolis-vitamin-b-komplex-kapseln-60-st"
+         alt="Mivolis Vitamin B‑Komplex">
+
+    <div class="thumb-row">
+      <img onclick="swapImage(this.src)"
+           src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1769558141/assets/pas/images/f1226dce-90df-4760-a2c5-8971dd24cd06/mivolis-vitamin-b-komplex-kapseln-60-st">
+
+      <img onclick="swapImage(this.src)"
+           src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1769558130/assets/pas/images/c738a57a-70da-4abc-8765-125d4f6f7a64/mivolis-vitamin-b-komplex-kapseln-60-st">
+
+      <img onclick="swapImage(this.src)"
+           src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1769558125/assets/pas/images/bcc5b3ad-8741-420f-92a6-1ed8849ef394/mivolis-vitamin-b-komplex-kapseln-60-st">
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE: PRODUCT INFO -->
+  <div>
+    <h1 class="product-title">Mivolis Vitamin B‑Komplex</h1>
+
+    <p class="product-desc">
+      Mivolis Vitamin B‑Komplex — это полноценная формула из восьми жизненно важных витаминов группы B, 
+      которые играют ключевую роль в работе нервной системы, энергетическом обмене, поддержке иммунитета 
+      и когнитивных функций. Комплекс помогает организму справляться с усталостью, стрессом, умственными 
+      нагрузками и способствует нормальной работе мозга.  
+      <br><br>
+      Витамины группы B не накапливаются в организме, поэтому их регулярное поступление особенно важно 
+      для людей с активным ритмом жизни, студентов, офисных сотрудников, спортсменов и всех, кто испытывает 
+      повышенную нагрузку или недостаток энергии. Продукт разработан в Германии и соответствует высоким 
+      стандартам качества Mivolis.
+    </p>
+
+    <div class="price">500 RUB</div>
+
+    <button class="btn">Добавить в корзину</button>
+
+    <h3 class="section-title">Преимущества</h3>
+    <ul>
+      <li>Полный комплекс из 8 витаминов группы B для максимальной поддержки организма.</li>
+      <li>Снижение усталости и повышение уровня энергии.</li>
+      <li>Поддержка нервной системы и устойчивости к стрессу.</li>
+      <li>Улучшение концентрации, памяти и когнитивных функций.</li>
+      <li>Поддержка обмена веществ и нормального уровня энергии.</li>
+      <li>Идеально подходит при умственных и физических нагрузках.</li>
+      <li>Немецкое качество Mivolis.</li>
+    </ul>
+
+    <h3 class="section-title">Почему важно</h3>
+    <div class="info-box">
+      Витамины группы B участвуют практически во всех ключевых процессах организма: 
+      от выработки энергии до работы нервной системы и мозга. Недостаток витаминов B 
+      может проявляться в виде усталости, раздражительности, снижения концентрации, 
+      ухудшения памяти, проблем со сном и сниженной работоспособности.  
+      <br><br>
+      Комплекс Mivolis помогает восполнить дефицит и поддерживать организм в условиях 
+      современного ритма жизни, когда стресс, недосыпание и высокие нагрузки стали нормой.
+    </div>
+
+    <h3 class="section-title">Состав</h3>
+    <div class="info-box">
+      Витамин B1 (тиамин) — поддержка нервной системы и энергетического обмена.  
+      Витамин B2 (рибофлавин) — защита клеток от окислительного стресса.  
+      Витамин B3 (ниацин) — поддержка кожи, нервов и метаболизма.  
+      Витамин B5 (пантотеновая кислота) — выработка энергии и гормонов.  
+      Витамин B6 — синтез нейромедиаторов и поддержка иммунитета.  
+      Витамин B7 (биотин) — здоровье кожи, волос и обмен веществ.  
+      Витамин B9 (фолиевая кислота) — кроветворение и работа мозга.  
+      Витамин B12 — энергия, концентрация, нервная система.  
+      <br><br>
+      Полный состав указан на упаковке.
+    </div>
+
+    <h3 class="section-title">Способ применения</h3>
+    <div class="info-box">
+      Взрослым: 1 капсула в день, запивая водой.  
+      Принимать во время еды для лучшего усвоения.  
+      <br><br>
+      Рекомендуемый курс: 4–12 недель.
+    </div>
+
+    <h3 class="section-title">Кому подходит</h3>
+    <div class="info-box">
+      ✔ людям с умственными нагрузками  
+      ✔ студентам и школьникам  
+      ✔ офисным работникам и программистам  
+      ✔ людям, испытывающим стресс или усталость  
+      ✔ спортсменам  
+      ✔ людям с дефицитом энергии  
+      ✔ пожилым людям для поддержки когнитивных функций  
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  function swapImage(src) {
+    document.getElementById("mainImg").src = src;
+  }
+</script>
+
+</body>
+</html>

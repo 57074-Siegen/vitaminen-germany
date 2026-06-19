@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Омега‑3 – Страница товара</title>
+
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --primary: #3b82f6;
+      --radius: 18px;
+      --shadow: 0 8px 24px rgba(0,0,0,0.06);
+      --font: system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .header {
+      background: #fff;
+      padding: 14px 18px;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .product-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 18px 40px;
+      display: grid;
+      gap: 30px;
+    }
+
+    @media (min-width: 900px) {
+      .product-page {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .main-image {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .thumb-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .thumb-row img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 12px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .thumb-row img:hover {
+      border-color: var(--primary);
+    }
+
+    .product-title {
+      font-size: 1.8rem;
+      margin: 0 0 10px;
+    }
+
+    .product-desc {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 18px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .info-box {
+      background: var(--card);
+      padding: 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">PureLife</div>
+  </div>
+</header>
+
+<section class="product-page">
+
+  <div>
+    <img id="mainImg" class="main-image"
+         src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1772934199/assets/pas/images/db928e4c-0bfe-46bf-9dfc-910e8cec84ad/mivolis-omega-3-1000-kapseln-60-st"
+         alt="Омега‑3">
+
+    <div class="thumb-row">
+      <img onclick="swapImage(this.src)"
+           src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_440,w_500/v1772934199/assets/pas/images/db928e4c-0bfe-46bf-9dfc-910e8cec84ad/mivolis-omega-3-1000-kapseln-60-st">
+      <img onclick="swapImage(this.src)"
+           src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1772934185/assets/pas/images/e8c3ae4e-b215-451e-91ec-5d7b28e24e7e/mivolis-omega-3-1000-kapseln-60-st">
+      <img onclick="swapImage(this.src)"
+           src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1772934192/assets/pas/images/311bb875-b35c-40f5-8ba5-e04cec475ce5/mivolis-omega-3-1000-kapseln-60-st">
+    </div>
+  </div>
+
+  <div>
+    <h1 class="product-title">Омега‑3</h1>
+
+    <p class="product-desc">
+      Омега‑3 жирные кислоты — это важнейшие нутриенты, которые поддерживают здоровье сердца, мозга и зрения.
+      Капсулы содержат концентрированный рыбий жир с высоким содержанием EPA и DHA — двух ключевых кислот,
+      необходимых для нормальной работы организма.
+    </p>
+
+    <div class="price">1000 RUB</div>
+
+    <button class="btn">Добавить в корзину</button>
+
+    <h3 class="section-title">Преимущества</h3>
+    <ul>
+      <li>Поддерживает работу сердца</li>
+      <li>Способствует нормальной функции мозга</li>
+      <li>Поддерживает зрение</li>
+      <li>Содержит EPA и DHA</li>
+      <li>Подходит для ежедневного приёма</li>
+      <li>Немецкое качество</li>
+    </ul>
+
+    <h3 class="section-title">Почему Омега‑3 важен</h3>
+    <div class="info-box">
+      EPA и DHA участвуют в работе сердечно‑сосудистой системы, помогают поддерживать нормальный уровень
+      триглицеридов и способствуют снижению воспалительных процессов. Омега‑3 также поддерживает когнитивные
+      функции, концентрацию и эмоциональное равновесие.
+    </div>
+
+    <h3 class="section-title">Состав</h3>
+    <div class="info-box">
+      Рыбий жир, омега‑3 жирные кислоты (EPA, DHA), желатиновая капсула, антиоксиданты.
+    </div>
+
+    <h3 class="section-title">Способ применения</h3>
+    <div class="info-box">
+      Принимать по 1–2 капсулы в день во время еды, запивая водой. Для максимального эффекта рекомендуется
+      регулярный приём.
+    </div>
+
+    <h3 class="section-title">Кому подходит</h3>
+    <div class="info-box">
+      Людям, которые мало употребляют рыбу, спортсменам, активным людям, тем, кто хочет поддержать сердце,
+      сосуды, концентрацию и общее самочувствие.
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  function swapImage(src) {
+    document.getElementById("mainImg").src = src;
+  }
+</script>
+
+</body>
+</html>

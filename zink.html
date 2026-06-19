@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Цинк 15 мг – Страница товара</title>
+
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --primary: #3b82f6;
+      --radius: 18px;
+      --shadow: 0 8px 24px rgba(0,0,0,0.06);
+      --font: system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .header {
+      background: #fff;
+      padding: 14px 18px;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .product-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 18px 40px;
+      display: grid;
+      gap: 30px;
+    }
+
+    @media (min-width: 900px) {
+      .product-page {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .main-image {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .thumb-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .thumb-row img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 12px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .thumb-row img:hover {
+      border-color: var(--primary);
+    }
+
+    .product-title {
+      font-size: 1.8rem;
+      margin: 0 0 10px;
+    }
+
+    .product-desc {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 18px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .info-box {
+      background: var(--card);
+      padding: 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">PureLife</div>
+  </div>
+</header>
+
+<section class="product-page">
+
+  <!-- LEFT SIDE: IMAGES -->
+  <div>
+    <img id="mainImg" class="main-image"
+         src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1771837671/assets/pas/images/d0617875-cd2f-4d80-9d25-a583a9cfbad6/mivolis-zink-15-histidin-cystein-tabletten-40-st"
+         alt="Цинк 15 мг">
+
+    <div class="thumb-row">
+
+      <!-- Front -->
+      <img onclick="swapImage(this.src)"
+           src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_440,w_500/v1771837671/assets/pas/images/d0617875-cd2f-4d80-9d25-a583a9cfbad6/mivolis-zink-15-histidin-cystein-tabletten-40-st">
+
+      <!-- Rückseite -->
+      <img onclick="swapImage(this.src)"
+           src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1771837926/assets/pas/images/fb552f2a-0ebb-44ed-b781-0ed7762a623a/mivolis-zink-15-histidin-cystein-tabletten-40-st">
+
+      <!-- Seitenansicht -->
+      <img onclick="swapImage(this.src)"
+           src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1771837720/assets/pas/images/e5e4b167-d212-41a1-9bd9-5eaeb6523ecf/mivolis-zink-15-histidin-cystein-tabletten-40-st">
+
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE: PRODUCT INFO -->
+  <div>
+    <h1 class="product-title">Цинк 15 мг + Гистидин + Цистеин</h1>
+
+    <p class="product-desc">
+      Комплекс цинка с аминокислотами гистидином и цистеином для поддержки иммунитета, 
+      кожи, волос и обмена веществ. Цинк играет ключевую роль в работе иммунной системы 
+      и способствует здоровому состоянию кожи и ногтей.
+    </p>
+
+    <div class="price">700 RUB</div>
+
+    <button class="btn">Добавить в корзину</button>
+
+    <h3 class="section-title">Преимущества</h3>
+    <ul>
+      <li>Поддерживает иммунную систему</li>
+      <li>Укрепляет кожу, волосы и ногти</li>
+      <li>Содержит гистидин и цистеин для лучшего усвоения</li>
+      <li>Способствует нормальному обмену веществ</li>
+      <li>Антиоксидантная защита</li>
+      <li>Подходит для ежедневного приёма</li>
+    </ul>
+
+    <h3 class="section-title">Почему важно</h3>
+    <div class="info-box">
+      Цинк — один из важнейших минералов для иммунитета, кожи и гормонального баланса. 
+      Он участвует в делении клеток, заживлении тканей и защите организма от окислительного стресса.
+    </div>
+
+    <h3 class="section-title">Состав</h3>
+    <div class="info-box">
+      Цинк (15 мг), гистидин, цистеин, вспомогательные вещества, растительная таблеточная основа.
+    </div>
+
+    <h3 class="section-title">Способ применения</h3>
+    <div class="info-box">
+      Принимать по 1 таблетке в день во время еды.  
+      Рекомендуется регулярный приём.
+    </div>
+
+    <h3 class="section-title">Кому подходит</h3>
+    <div class="info-box">
+      Людям с ослабленным иммунитетом, проблемами кожи, ломкими волосами и ногтями, 
+      а также тем, кто хочет поддержать обмен веществ и общее состояние организма.
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  function swapImage(src) {
+    document.getElementById("mainImg").src = src;
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мультивитамины для детей – Страница товара</title>
+
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --primary: #3b82f6;
+      --radius: 18px;
+      --shadow: 0 8px 24px rgba(0,0,0,0.06);
+      --font: system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .header {
+      background: #fff;
+      padding: 14px 18px;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .product-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 18px 40px;
+      display: grid;
+      gap: 30px;
+    }
+
+    @media (min-width: 900px) {
+      .product-page {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .main-image {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .thumb-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .thumb-row img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 12px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .thumb-row img:hover {
+      border-color: var(--primary);
+    }
+
+    .product-title {
+      font-size: 1.8rem;
+      margin: 0 0 10px;
+    }
+
+    .product-desc {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 18px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .info-box {
+      background: var(--card);
+      padding: 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">PureLife</div>
+  </div>
+</header>
+
+<section class="product-page">
+
+  <!-- LEFT SIDE: IMAGES -->
+
+
+
+  <div>
+  <img id="mainImg" class="main-image"
+       src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1770244984/assets/pas/images/d1828936-1b36-4358-b883-09bcfc97f501/mivolis-multivitamine-fuer-kinder-kautabletten-20-st"
+       alt="Мультивитамины для детей">
+
+  <div class="thumb-row">
+     <img onclick="swapImage(this.src)"
+         src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1770244984/assets/pas/images/d1828936-1b36-4358-b883-09bcfc97f501/mivolis-multivitamine-fuer-kinder-kautabletten-20-st">
+    <!-- Frontansicht -->
+    <img onclick="swapImage(this.src)"
+         src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1770244974/assets/pas/images/2dd8e61c-d6c5-420d-939a-53e85765e94d/mivolis-multivitamine-fuer-kinder-kautabletten-20-st">
+
+    <!-- Seitenansicht -->
+    <img onclick="swapImage(this.src)"
+         src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_440,w_500/v1770244979/assets/pas/images/44d0eec7-e852-438a-8e31-4be493c90e0c/mivolis-multivitamine-fuer-kinder-kautabletten-20-st">
+
+  </div>
+</div>
+
+  
+
+  <!-- RIGHT SIDE: PRODUCT INFO -->
+  <div>
+    <h1 class="product-title">Мультивитамины для детей</h1>
+
+    <p class="product-desc">
+      Жевательные мультивитамины с витаминами A, C, D, E и группой B. 
+      Поддерживают иммунитет, рост, энергию и общее развитие ребёнка. 
+      Имеют приятный вкус, подходят для ежедневного приёма.
+    </p>
+
+    <div class="price">220 RUB</div>
+
+    <button class="btn">Добавить в корзину</button>
+
+    <h3 class="section-title">Преимущества</h3>
+    <ul>
+      <li>Поддержка иммунитета</li>
+      <li>Содержит витамины A, C, D, E и B‑комплекс</li>
+      <li>Способствует росту и развитию</li>
+      <li>Повышает энергию и жизненный тонус</li>
+      <li>Жевательная форма — удобно для детей</li>
+      <li>Приятный фруктовый вкус</li>
+    </ul>
+
+    <h3 class="section-title">Почему важно</h3>
+    <div class="info-box">
+      Детям часто не хватает витаминов из-за несбалансированного питания. 
+      Мультивитамины помогают укрепить иммунитет, поддержать рост, когнитивные функции 
+      и общее самочувствие ребёнка.
+    </div>
+
+    <h3 class="section-title">Состав</h3>
+    <div class="info-box">
+      Витамины A, C, D3, E, B1, B2, B6, B12, ниацин, фолиевая кислота, биотин, 
+      фруктовые ароматизаторы, жевательная основа.
+    </div>
+
+    <h3 class="section-title">Способ применения</h3>
+    <div class="info-box">
+      Детям от 4 лет: по 1 жевательной таблетке в день.  
+      Принимать во время еды.
+    </div>
+
+    <h3 class="section-title">Кому подходит</h3>
+    <div class="info-box">
+      Детям с повышенной нагрузкой, в сезон простуд, при несбалансированном питании 
+      или для общей поддержки иммунитета и энергии.
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  function swapImage(src) {
+    document.getElementById("mainImg").src = src;
+  }
+</script>
+
+</body>
+</html>

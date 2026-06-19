@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Магний комплекс – Страница товара</title>
+
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --primary: #3b82f6;
+      --radius: 18px;
+      --shadow: 0 8px 24px rgba(0,0,0,0.06);
+      --font: system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .header {
+      background: #fff;
+      padding: 14px 18px;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .product-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 18px 40px;
+      display: grid;
+      gap: 30px;
+    }
+
+    @media (min-width: 900px) {
+      .product-page {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .main-image {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .thumb-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .thumb-row img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 12px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .thumb-row img:hover {
+      border-color: var(--primary);
+    }
+
+    .product-title {
+      font-size: 1.8rem;
+      margin: 0 0 10px;
+    }
+
+    .product-desc {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 18px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .info-box {
+      background: var(--card);
+      padding: 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">PureLife</div>
+  </div>
+</header>
+
+<section class="product-page">
+
+  <!-- LEFT SIDE: IMAGES -->
+  <div>
+    <img id="mainImg" class="main-image"
+         src="https://heim.ma/wp-content/uploads/2024/01/Mivolis-magnesium-300-comprimes-4058172101410.jpg"
+         alt="Магний комплекс">
+
+    <div class="thumb-row">
+      <img onclick="swapImage(this.src)"
+           src="https://heim.ma/wp-content/uploads/2024/01/Mivolis-magnesium-300-comprimes-4058172101410.jpg">
+
+      <img onclick="swapImage(this.src)"
+           src="https://i.ebayimg.com/images/g/MoUAAeSw~GBogI6J/s-l1600.webp">
+     </div>
+  </div>
+
+  <!-- RIGHT SIDE: PRODUCT INFO -->
+  <div>
+    <h1 class="product-title">Магний комплекс</h1>
+
+    <p class="product-desc">
+      Высококачественный магний в трёх формах для поддержки мышц, нервной системы 
+      и восстановления организма. Помогает снизить усталость, улучшает сон и 
+      способствует нормальной работе сердца и обмена веществ.
+    </p>
+
+    <div class="price">??? RUB</div>
+
+    <button class="btn">Добавить в корзину</button>
+
+    <h3 class="section-title">Преимущества</h3>
+    <ul>
+      <li>Поддерживает мышцы и нервную систему</li>
+      <li>Снижает усталость и напряжение</li>
+      <li>Улучшает качество сна</li>
+      <li>Три формы магния для лучшего усвоения</li>
+      <li>Подходит для ежедневного приёма</li>
+      <li>Идеально при стрессе и нагрузках</li>
+    </ul>
+
+    <h3 class="section-title">Почему магний важен</h3>
+    <div class="info-box">
+      Магний участвует в более чем 300 биохимических процессах организма. 
+      Он необходим для работы мышц, нервов, сердца, энергетического обмена 
+      и восстановления после физической нагрузки.
+    </div>
+
+    <h3 class="section-title">Состав</h3>
+    <div class="info-box">
+      Магний (оксид, цитрат, малат), вспомогательные вещества, растительная капсула.
+    </div>
+
+    <h3 class="section-title">Способ применения</h3>
+    <div class="info-box">
+      Принимать по 1–2 капсулы в день, желательно вечером. 
+      Запивать водой.
+    </div>
+
+    <h3 class="section-title">Кому подходит</h3>
+    <div class="info-box">
+      Людям с повышенной нагрузкой, спортсменам, тем, кто испытывает стресс, 
+      проблемы со сном или мышечное напряжение.
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  function swapImage(src) {
+    document.getElementById("mainImg").src = src;
+  }
+</script>
+
+</body>
+</html>

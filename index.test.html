@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PureLife – Produkte</title>
+
+  <style>
+    :root {
+      --bg: #f8f9fb;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --primary: #3b82f6;
+      --radius: 18px;
+      --shadow: 0 8px 24px rgba(0,0,0,0.06);
+      --font: system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* HEADER */
+    .header {
+      background: #fff;
+      padding: 14px 18px;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .menu-btn {
+      font-size: 24px;
+      background: none;
+      border: none;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      padding: 10px 0;
+    }
+
+    .mobile-nav.open {
+      display: flex;
+    }
+
+    .mobile-nav a {
+      padding: 10px 0;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    /* HERO */
+    .hero {
+      padding: 32px 18px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 1.8rem;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    /* FILTERS */
+    .filters {
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+    }
+
+    .filter-chip {
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid #d1d5db;
+      background: #fff;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+
+    .filter-chip.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .sort-select {
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid #d1d5db;
+    }
+
+    /* PRODUCTS */
+    .products {
+      padding: 20px 18px 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .product-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .product-card img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+
+}
+    
+    .product-card2 {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .product-card2 img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+
+}
+    .desc {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .price {
+      font-weight: 600;
+    }
+
+    .btn {
+      padding: 8px 14px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">PureLife</div>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#">Продукты</a>
+    <a href="#">О нас</a>
+    <a href="#">Знания</a>
+    <a href="#">Контакты</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Натуральные добавки для твоего ежедневного здоровья</h1>
+  <p>Разработано на основе науки. Минималистичный состав. Для энергии, фокуса и хорошего самочувствия.</p>
+</section>
+
+<section class="filters">
+  <div class="filter-row">
+    <button class="filter-chip active">Все</button>
+    <button class="filter-chip">Энергия</button>
+    <button class="filter-chip">Иммунитет</button>
+    <button class="filter-chip">Восстановление</button>
+  </div>
+
+  <select class="sort-select">
+    <option>Сортировать: Рекомендуемые</option>
+    <option>Цена: по возрастанию</option>
+    <option>Цена: по убыванию</option>
+    <option>Новинки</option>
+  </select>
+</section>
+
+
+<section class="products">
+  <div class="product-grid">
+
+   <div class="product-card">
+  <a href="test_2.html" class="product-link">
+    <img src="https://api.cjenoteka.hr/uploads/cache/product_large/uploads/2025/03/mivolis-omega-3-kapsule-1000-85g-67cec347d8f52.png" alt="">
+  </a>
+  <h3>Омега‑3 1000 мг</h3>
+  <p class="desc">Поддержка сердца, мозга и зрения. Содержит EPA и DHA.</p>
+  <div class="meta">
+    <span class="price">1000 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <a href="mischki.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1770244984/assets/pas/images/d1828936-1b36-4358-b883-09bcfc97f501/mivolis-multivitamine-fuer-kinder-kautabletten-20-st" alt="">
+  </a>
+  <h3>Мультивитамины для детей</h3>
+  <p class="desc">Жевательные витамины для иммунитета, роста и энергии.</p>
+  <div class="meta">
+    <span class="price">220 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+
+<div class="product-card">
+  <a href="magnesium_1.html" class="product-link">
+  <img src="https://i.ebayimg.com/images/g/pi8AAeSwyGVogI50/s-l1600.webp" alt="">
+  </a>
+  <h3>Магний комплекс</h3>
+  <p class="desc">Три формы магния для мышц, нервов и восстановления.</p>
+  <div class="meta">
+    <span class="price">?????</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <a href="augen.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1773444347/assets/pas/images/e3be907e-052c-477f-976b-ea87fdd6a2a4/mivolis-augen-extra-sehkraft-schutz-tag-nacht-kapseln-30-st" alt="">
+  </a>
+  <h3>Поддержка зрения</h3>
+  <p class="desc">Лютеин, зеаксантин и витамины для защиты глаз день и ночь.</p>
+  <div class="meta">
+    <span class="price">600 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <a href="zink.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1771837671/assets/pas/images/d0617875-cd2f-4d80-9d25-a583a9cfbad6/mivolis-zink-15-histidin-cystein-tabletten-40-st" alt="">
+  </a>
+  <h3>Цинк 15 мг</h3>
+  <p class="desc">Для иммунитета, кожи, волос и обмена веществ.</p>
+  <div class="meta">
+    <span class="price">700 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+   <a href="a-z.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1769554295/assets/pas/images/45478b99-babc-4f99-906c-afa9440a02d8/mivolis-a-z-komplett-depot-ab-50-tabletten-100-st" alt="">
+  </a>
+  <h3>Витамины A–Z</h3>
+  <p class="desc">Полный комплекс витаминов и минералов на каждый день.</p>
+  <div class="meta">
+    <span class="price">1100 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+     <a href="kollagen5000.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1769555779/assets/pas/images/6a90df4d-78ad-4a46-b063-276db8641537/mivolis-kollagen-5000-beutel-20-st" alt="">
+  </a>
+  <h3>Коллаген 5000</h3>
+  <p class="desc">Поддержка кожи, суставов и соединительных тканей.</p>
+  <div class="meta">
+    <span class="price">1600 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <a href="jewa_mischki.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1769558120/assets/pas/images/8e3064dc-22b2-49e6-a7e0-1070ff61813f/mivolis-multivitamin-baerchen-fuer-kinder-60-st" alt="">
+  </a>
+  <h3>Мультивитаминные мишки</h3>
+  <p class="desc">Вкусные жевательные витамины для детей.</p>
+  <div class="meta">
+    <span class="price">550 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+    <a href="glucosamin1600.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1747436315/assets/pas/images/5a7d635b-18fd-44bf-bbc4-24d9a1dd4415/doppelherz-glucosamin-1600-kapseln-100-st" alt="">
+  </a>
+  <h3>Глюкозамин 1600</h3>
+  <p class="desc">Для суставов, хрящей и подвижности.</p>
+  <div class="meta">
+    <span class="price">1500 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <a href="glucosamin_teta.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_440,w_500/v1747434836/assets/pas/images/bad68e09-0de6-412e-b52e-f8dcff27a0e9/tetesept-glucosamin-1650-tabletten" alt="">
+  </a>
+  <h3>Tetesept Глюкозамин 1650</h3>
+  <p class="desc">Поддержка суставов и хрящевой ткани.</p>
+  <div class="meta">
+    <span class="price">1500 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+    <a href="kollagen1000.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_440,w_500/v1747435189/assets/pas/images/34a98ff8-ea8d-42c8-ac11-b0055b52ece3/tetesept-kollagen-1000-intens-30-st" alt="">
+  </a>
+  <h3>Коллаген 1000</h3>
+  <p class="desc">Для кожи, волос, ногтей и суставов.</p>
+  <div class="meta">
+    <span class="price">1200 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+   <a href="kollagen_DH_5000.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_440,w_500/v1775165851/assets/pas/images/b498cb77-40e8-4be6-97a1-121ab011ba31/doppelherz-kollagen-5000-liquid-14-sticks" alt="">
+  </a>
+  <h3>Коллаген 5000 Liquid</h3>
+  <p class="desc">Жидкая формула для кожи и соединительных тканей.</p>
+  <div class="meta">
+    <span class="price">1600 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <a href="lezithin.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_440,w_500/v1755093821/assets/pas/images/fdef8dba-9e6f-4663-9d8b-dc8a7833ebd0/doppelherz-lecithin-b-vitamine-kapseln-40-st" alt="">
+  </a>
+  <h3>Лецитин + В‑витамины</h3>
+  <p class="desc">Для мозга, нервной системы и энергии.</p>
+  <div class="meta">
+    <span class="price">?????</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+    <a href="vitamin_B.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_440,w_500/v1769558141/assets/pas/images/f1226dce-90df-4760-a2c5-8971dd24cd06/mivolis-vitamin-b-komplex-kapseln-60-st" alt="">
+  </a>
+  <h3>Витамин B‑комплекс</h3>
+  <p class="desc">Для нервной системы, энергии и обмена веществ.</p>
+  <div class="meta">
+    <span class="price">500 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card">
+    <a href="schonheit.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_440,w_500/v1747436429/assets/pas/images/66b1142d-8698-4ae7-9b35-19a1b89f2294/doppelherz-haut-haare-naegel-tabletten-30-stueck" alt="">
+  </a>
+  <h3>Кожа + Волосы + Ногти</h3>
+  <p class="desc">Биотин, цинк и витамины для красоты и здоровья.</p>
+  <div class="meta">
+    <span class="price">1500 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+<div class="product-card2">
+  <a href="iodid.html" class="product-link">
+  <img src="https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1775806198/assets/pas/images/694e01ea-4a97-492f-892c-2195a9234456/hexal-jodid-200-g-hexal-tabletten" alt="">
+  </a>
+  <h3>Йодид 200 мкг</h3>
+  <p class="desc">Для щитовидной железы и гормонального баланса.</p>
+  <div class="meta">
+    <span class="price">750 RUB</span>
+    <button class="btn">Купить</button>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const nav = document.getElementById("mobileNav");
+  btn.addEventListener("click", () => nav.classList.toggle("open"));
+</script>
+
+</body>
+</html>
